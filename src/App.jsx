@@ -302,7 +302,8 @@ export default function App() {
   }
 
   useEffect(() => {
-    if(Date.getHours() > 12) setHour(Date.getHours() - 12)
+    if(Date.getHours() === 0) setHour(12)
+    else if (Date.getHours() > 12) setHour(Date.getHours() - 12)
     else setHour(Date.getHours())
     setMinute(Date.getMinutes())
     setSecond(Date.getSeconds())
@@ -311,7 +312,7 @@ export default function App() {
       tick()
     }, 1000)
     return () => clearInterval(interval)
-  }, [second])
+  }, [])
 
 
   const classes = `border border-black h-96 rotate-[${minute * 6}deg]`
