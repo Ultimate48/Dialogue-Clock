@@ -282,9 +282,9 @@ function Second({second}){
 
 export default function App() {
 
-  const [hour, setHour] = useState(12)
-  const [minute, setMinute] = useState(59)
-  const [second, setSecond] = useState(40)
+  const [hour, setHour] = useState(0)
+  const [minute, setMinute] = useState(0)
+  const [second, setSecond] = useState(0)
 
   const Date = new window.Date()
 
