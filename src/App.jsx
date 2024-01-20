@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import './App.css'
+import './app.css'
 
 function positionAlign(t){
   let position = ''
